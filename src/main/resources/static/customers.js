@@ -1,4 +1,3 @@
-
 // Function to fetch and display customer data
 function fetchCustomers() {
   fetch('/api/customers')
@@ -108,7 +107,6 @@ document.getElementById('syncButton').addEventListener('click', () => {
 
 });
   
-  // Event listener for search query input
   
 
 // Function to add a new customer
@@ -136,7 +134,7 @@ function addCustomer(event) {
   })
   .then(response => {
       if (response.ok) {
-          $('#addCustomerModal').modal('hide'); // Hide modal on success
+          $('#addCustomerModal').modal('hide'); 
           fetchCustomers(); // Refresh customer listing
       } else {
           throw new Error('Failed to add customer');
@@ -152,7 +150,6 @@ function editCustomer(customerId) {
     fetch(`/api/customers/${customerId}`)
         .then(response => response.json())
         .then(customer => {
-            // Populate the edit form with customer details
             editId = customer.id;
             document.getElementById('editFirstName').value = customer.firstName;
             document.getElementById('editLastName').value = customer.lastName;
@@ -162,9 +159,7 @@ function editCustomer(customerId) {
             document.getElementById('editState').value = customer.state;
             document.getElementById('editEmail').value = customer.email;
             document.getElementById('editPhone').value = customer.phone;
-            // Populate other fields as needed
 
-            // Show the edit customer modal
             $('#editCustomerModal').modal('show');
         })
         .catch(error => console.error('Error fetching customer:', error));
@@ -213,7 +208,7 @@ document.getElementById('editCustomerForm').addEventListener('submit', function(
     })
     .then(response => {
         if (response.ok) {
-            $('#editCustomerModal').modal('hide'); // Hide modal on success
+            $('#editCustomerModal').modal('hide'); 
             fetchCustomers(); // Refresh customer listing
         } else {
             throw new Error('Failed to update customer');

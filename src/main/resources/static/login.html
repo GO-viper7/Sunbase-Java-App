@@ -25,19 +25,15 @@
   <script>
 
     document.getElementById('loginForm').addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent form submission
+      event.preventDefault();
     
       // Fetch form data
       const formData = {
         username: document.getElementById('username').value,
         password: document.getElementById('password').value
       };
-    
-      // Perform form validation (if needed)
-    
-      // Here you can perform an AJAX request to send form data to the server
-      // After successful registration, redirect to the login page
-      window.location.href = 'customers.html'; // Redirect to login page
+
+      window.location.href = 'customers.html'; 
     });
     
   </script>
