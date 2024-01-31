@@ -31,22 +31,22 @@ Follow these simple steps to run this app locally on your machine.
        email VARCHAR(100),
        phone VARCHAR(15),
        PRIMARY KEY (id)
-   );```
+   );
 
 2. **Configure Database Connection:**
 
    Open the `application.properties` file in your project and update the following properties with your MySQL server details:
 
    `spring.datasource.url=jdbc:mysql://localhost:3306/your_database_name
-   spring.datasource.username=your_mysql_username
+   spring.datasource.username=your_mysql_username<br>
    spring.datasource.password=your_mysql_password`
 
 ### Running Locally
 
 3. Run the following commands to build the application:
 
-   ./gradlew build
+   `./gradlew build`
 
 4. Once the build is successful, run the application using the following command:
 
-   ./gradlew bootRun
+   `./gradlew bootRun`
