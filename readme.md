@@ -2,7 +2,7 @@
 
 ## Demo
 
-Watch a quick demo of [Sunbase-Java-App] on [Click here for Demo](https://vimeo.com/908245453).
+Watch a quick demo of Sunbase-Java-App on [Click here for Demo](https://vimeo.com/908245453).
 
 ## Getting Started
 
@@ -37,9 +37,9 @@ Follow these simple steps to run this app locally on your machine.
 
    Open the `application.properties` file in your project and update the following properties with your MySQL server details:
 
-   spring.datasource.url=jdbc:mysql://localhost:3306/your_database_name
+   `spring.datasource.url=jdbc:mysql://localhost:3306/your_database_name
    spring.datasource.username=your_mysql_username
-   spring.datasource.password=your_mysql_password
+   spring.datasource.password=your_mysql_password`
 
 ### Running Locally
 
